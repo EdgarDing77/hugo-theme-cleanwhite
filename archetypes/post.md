@@ -1,10 +1,13 @@
 ---
-title:       "An Example Post"
-subtitle:    ""
+title: '{{ replace .File.ContentBaseName `-` ` ` | title }}'
+subtitle: ''
 description: ""
-date:        2018-06-04
-author:      ""
-image:       ""
-tags:        ["tag1", "tag2"]
-categories:  ["Tech" ]
+date: '{{ .Date }}'
+author: "EdgarDing"
+tags:
+  - Kubernetes
+  - Test
+
+categories: ["Tech"]
+showtoc: true
 ---
